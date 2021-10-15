@@ -1,12 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<head >
+    <!-- <meta charset="UTF-8"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Web</title>
+    <title>Tour and travel agency </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="validation.html" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- css file link  -->
+    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    
+    <!-- header section starts  -->
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-search" id="search-btn"></i>
+            <i class="fa fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <!-- <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fa fa-search"></label> -->
+
+            <input type="text" name="searchField" id="search-bar" />
+            <button onclick="searchWithField()" >Search</button>
+            <ul id="bandsFound"></ul>
+        </form>
+       
+    </header>
+    <!-- header section ends -->
+    <!-- login form container  -->
+    <div class="login-form-container">
+        <i class="fa fa-times" id="form-close"></i>
+        <form>
+            <div class="form-group">
+                <label for="user"> Email: </label>
+                <input type="email" name="email" id="email" required class="box" />
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your email must be a valid email </small>
+            </div>
+            <div class="form-group">
+                <label for="password"> Password: </label>
+                <input type="password" name="pass" id="password" class="box" />
+                <h5 id="passcheck" style="color: red">
+                    **Please Fill the password </h5>
+            </div>
+            <div class="form-group">
+                <label for="conpassword"> Confirm Password: </label>
+                <input type="password" name="username" id="conpassword" class="box" />
+                <h5 id="conpasscheck" style="color: red">
+                    **Password didn't match</h5>
+            </div>
+            <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary" />
+        </form>
+    </div>
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>dicover new places with us, adventure awaits</p>
+            <a href="#gallery" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- book section starts  -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <!-- <input type="submit" class="btn" value="book now"> -->
+                <script>
+                    function myFunction() {
+                        alert("Booking Confirm!!!!");
+                    }
+                </script>
+                <button onclick="myFunction()" href="" type="submit" class="btn">
+                    Book now
+                </button>
+            </form>
+        </div>
+    </section> -->
+    <!-- book section ends -->
+    <!-- packages section starts  -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                    <div class="price">Rs.29,990/- <span>Rs.34,990/-</span> </div>
+                    <p>5 Days/4 Nights</p>
+                    <a href="#" class="btn">Veiw Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                    <div class="price">Rs.1,13,999/- <span>Rs.1,43,999/-</span> </div>
+                    <p>10 Days/9 Nights</p>
+                    <a href="#" class="btn">Veiw Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
+                    <div class="price">Rs.77,214/- <span>Rs.90,000/-</span> </div>
+                    <p>8 Days/7 Nights</p>
+                    <a href="#" class="btn">Veiw Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Paris </h3>
+                    <div class="price">Rs.96,589/-<span>Rs.1,30,589/-</span> </div>
+                    <p>6 Days/5 Nights</p>
+                    <a href="Place_info.html" class="btn">Veiw Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                    <div class="price"> Rs.1,09,083/-<span>Rs.1,29,099/-</span> </div>
+                    <p>6 Days/5 Nights</p>
+                    <a href="#" class="btn">Veiw Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> eypt </h3>
+                    <div class="price"> Rs.51,367/- <span>Rs.70,367/-</span> </div>
+                    <p>6 Days/5 Nights</p>
+                    <a href="#" class="btn">Veiw Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packages section ends -->
+    <!-- services section starts  -->
+    <section class="services " id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        
+      <div class="swiper-container services-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp"
+                            alt="">
+                        <h3>Affordable Hotels</h3>
+                    </div>
+                </div>
+           
+            
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/03/Adventure-sports-in-Ahmedabad.jpg"
+                            alt="">
+                        <h3>Adventure</h3>
+                    </div>
+                </div>
+            
+            
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2018/06/BOGO_Pune_blog_banner_2-1030x538.png"
+                            alt="">
+                        <h3>Food & Drinks</h3>
+                    </div>
+                </div>
+           
+           
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://www.oxfordsaudia.com/wp-content/uploads/2018/05/Flyfast-1-628x439.jpg" alt="">
+                        <h3>Fastest Travels</h3>
+                    </div>
+                </div>
+            </div>
+        
+   
+    </section> 
+    <!-- services section ends -->
+    <!-- gallery section starts  -->
+    <!-- <div class="col-3">.col-9</div> -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+                
+                    <div class="box">
+                        <img src="images/g-1.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                
+            
+                <div class="box">
+                    <img src="images/g-2.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+            
+                <div class="box">
+                    <img src="images/g-3.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+          
+            
+                <div class="box">
+                    <img src="images/g-4.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+            
+                <div class="box">
+                    <img src="images/g-5.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+            
+                <div class="box">
+                    <img src="images/g-6.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+            
+            
+                <div class="box">
+                    <img src="images/g-7.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+            
+                <div class="box">
+                    <img src="images/g-8.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+          
+                <div class="box">
+                    <img src="images/g-9.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+           
+           
+            </div>
+        </div>
+    </section> -->
+    <!-- gallery section ends -->
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>H</span>
+            <span>a</span>
+            <span>p</span>
+            <span>p</span>
+            <span>y</span>
+            <span class="space"></span>
+            <span>C</span>
+            <span>u</span>
+            <span>s</span>
+            <span>t</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
+            <span>r</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="https://lh3.googleusercontent.com/a-/AOh14GiEnviRfEV1bZIK7ioRlQsM_BpdGxjR2l3Y0Clu=s288-p-rw-no"
+                            alt="">
+                        <p>It was a wonderful experience for us. All your arrangements were up to the mark.
+                            All hotels and transportation arrangements were excellent.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.png" alt="">
+                        <p>It was a wonderful experience for us. All your arrangements were up to the mark.
+                            All hotels and transportation arrangements were excellent.</p>
+                        <h3></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.png" alt="">
+                        <p>It was a wonderful experience for us. All your arrangements were up to the mark.
+                            All hotels and transportation arrangements were excellent.</p>
+                        <h3></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.png" alt="">
+                        <p>It was a wonderful experience for us. All your arrangements were up to the mark.
+                            All hotels and transportation arrangements were excellent.</p>
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="mobile no">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <!-- <input type="submit" class="btn" value="send message"> -->
+                <script>
+                    function myFunction() {
+                        alert("Message Sent!!!!");
+                    }
+                </script>
+                <button onclick="myFunction()" href="" type="submit" class="btn">
+                    Send message
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>We provide every travel related solution. We organize group tours, customized packages, corporate
+                    tours (MICE), provide visa assistance & also take care of air tickets, travel insurance & forex
+                    needs.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="https://www.planetware.com/tourist-attractions/india-ind.htm">India</a>
+                <a href="https://www.planetware.com/tourist-attractions/usa-us.htm">USA</a>
+                <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Japan</a>
+                <a href="https://www.planetware.com/tourist-attractions/france-f.htm">France</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://facebook.com">facebook</a>
+                <a href="https://instagram.com">instagram</a>
+                <a href="https://twitter.com">twitter</a>
+                <a href="https://linkedin.com">linkedin</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="Script.js"></script>
+    <script src="validation.js"></script>
 </body>
+
 </html>

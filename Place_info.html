@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Place info/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="place_info.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+
+      <div id="menu-bar" class="fa fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+          <a href="index.html#home">home</a>
+          <a href="index.html#book">book</a>
+          <a href="index.html#packages">packages</a>
+          <a href="index.html#services">services</a>
+          <a href="index.html#gallery">gallery</a>
+          <a href="index.html#review">review</a>
+          <a href="index.html#contact">contact</a>
+      
+      </nav>
+     
+      <div class="icons">
+          <i class="fa fa-search" id="search-btn"></i>
+          <i class="fa fa-user" id="login-btn"></i>
+      </div>
+
+     
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search here...">
+          <label for="search-bar" class="fa fa-search"></label>
+      </form>
+
+ 
+  </header>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "images/p-4.jpg" alt = "place image">
+              <img src = "images/g-1.jpg" alt = "place image">
+              <img src = "images/g-2.jpg" alt = "place image">
+              <img src = "images/g-3.jpg" alt = "place image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "images/p-4.jpg" alt = "Place image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "images/g-1.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "images/g-2.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "images/g-3.jpg" alt = "shoe image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Paris</h2>
+          <a href = "https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm" class = "product-link">visit for more info</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class = "Booking rate">
+            <p class = "last-price">Old Price: <span>Rs.1,30,589/-</span></p>
+            <p class = "new-price">New Price: <span>Rs.96,589/-</span></p>
+          </div>
+
+          <div class = "place-detail">
+            <h2>about this place: </h2>
+            <p style="font-size: 12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p style="font-size: 12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <ul style="font-size: 12px"><h4>Services:</h4>
+              <li>Affordable hotels</li>
+              <li>Adventure</li>
+              <li>Food & Drinks</li>
+              <li>Fastest Travel</li>
+              
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+           
+            
+            <!-- <script>
+              function myFunction() {
+                alert("Booking Confirm");
+              }
+              </script>
+              <button onclick="myFunction()" href="#book" type = "button" class = "btn">
+                  Book now <i class = "fas fa-shopping-cart"></i>
+                </button> -->
+                <a href="index.html#book" class="btn">Book Now</a>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+
+      <div class="box-container">
+
+          <div class="box">
+              <h3>About us</h3>
+              <p>We provide every travel related solution. We organize group tours, customized packages, corporate tours (MICE), provide visa assistance & also take care of air tickets, travel insurance & forex needs.</p>
+
+          </div>
+          <div class="box">
+              <h3>branch locations</h3>
+              <a href="https://www.planetware.com/tourist-attractions/india-ind.htm">India</a>
+              <a href="https://www.planetware.com/tourist-attractions/usa-us.htm">USA</a>
+              <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Japan</a>
+              <a href="https://www.planetware.com/tourist-attractions/france-f.htm">France</a>
+          </div>
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#home">home</a>
+              <a href="#book">book</a>
+              <a href="#packages">packages</a>
+              <a href="#services">services</a>
+              <a href="#gallery">gallery</a>
+              <a href="#review">review</a>
+              <a href="#contact">contact</a>
+          </div>
+          <div class="box">
+              <h3>follow us</h3>
+              <a href="https://facebook.com">facebook</a>
+              <a href="https://instagram.com">instagram</a>
+              <a href="https://twitter.com">twitter</a>
+              <a href="https://linkedin.com">linkedin</a>
+          </div>
+
+      </div>
+
+
+
+  </section>
+  <script src="Script.js"></script>
+    <script src="place_info.js"></script>
+  </body>
+  </html>
